@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f0efeb;
+  height: 100%;
+  color: #1c1b1b;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.hero-container {
+  padding: 100px 0;
+  max-width: 840px;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 68px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 68px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  padding-right: 80px;
+}
+
+
+.navbar .dropdown-item {
+  position: relative;
+}
+
+.dropdown-item a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.dropdown-item a svg {
+  width: 22px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.dropdown-item a.opened svg {
+  transform: rotate(180deg);
+}
+
+.navbar .dropdown {
+  position: absolute;
+  background: #fff;
+  right: -11px;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.navbar .dropdown button {
+  background: transparent;
+  text-align: left;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+  padding: 6px 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.navbar .dropdown button:hover {
+  background: #21f7ec;
+}

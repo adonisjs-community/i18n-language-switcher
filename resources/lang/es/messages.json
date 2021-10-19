@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Hogar"
+  },
+  "languages": {
+    "en": "Inglés",
+    "fr": "Francés",
+    "es": "Español"
+  },
+  "homepage": {
+    "title": "Un marco web con todas las funciones para Node.js",
+    "subtitle": "AdonisJS incluye todo lo que necesita para crear una aplicación web completamente funcional o un servidor API. Deje de perder horas descargando y ensamblando cientos de paquetes juntos: use AdonisJS y sea productivo desde el primer día"
+  }
+}

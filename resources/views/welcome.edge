@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdonisJS - A fully featured web framework for Node.js</title>
+    @entryPointScripts('app')
+    @entryPointStyles('app')
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a href="/">
+            @!logo()
+          </a>
+
+          <nav class="navbar">
+            <div class="dropdown-item" x-data="{ open: false }" @click.outside="open = false">
+              <a href="#" @click.prevent="open = !open" :class="{ opened: open }">
+                <span>
+                  {{ t(`messages.languages.${i18n.locale}`) }} ({{ i18n.locale }})
+                </span>
+
+                <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </a>
+
+              <div class="dropdown" x-show="open">
+                @each(locale in getSupportedLocales())
+                  @if(locale !== i18n.locale)
+                    <form
+                      method="POST"
+                      action="{{ route('language.update', [locale]) }}"
+                    >
+                      <button type="submit">
+                        {{ t(`messages.languages.${locale}`) }} ({{ locale }})
+                      </button>
+                    </form>
+                  @end
+                @end
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-container">
+          <p class="hero-title">
+            {{ t('messages.homepage.title') }}
+          </p>
+
+          <p class="hero-subtitle">
+            {{ t('messages.homepage.subtitle', { locale: i18n.locale }) }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

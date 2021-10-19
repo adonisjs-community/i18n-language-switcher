@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Home"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "es": "Spanish"
+  },
+  "homepage": {
+    "title": "A fully featured web framework for Node.js",
+    "subtitle": "AdonisJS includes everything you need to create a fully functional web app or an API server. Stop wasting hours in downloading and assembling hundreds of packages together — Use AdonisJS and be productive from day one."
+  }
+}

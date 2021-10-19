@@ -1,0 +1,38 @@
+{
+  "name": "language-switcher",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ace serve --watch",
+    "build": "node ace build --production",
+    "start": "node server.js",
+    "lint": "eslint . --ext=.ts",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^5.3.7",
+    "@symfony/webpack-encore": "^1.6.1",
+    "adonis-preset-ts": "^2.1.0",
+    "alpinejs": "^3.4.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-adonis": "^1.3.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pino-pretty": "^7.1.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4",
+    "youch": "^2.2.2",
+    "youch-terminal": "^1.1.1"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^5.4.0",
+    "@adonisjs/i18n": "^1.5.0",
+    "@adonisjs/repl": "^3.1.6",
+    "@adonisjs/session": "^6.1.2",
+    "@adonisjs/shield": "^7.0.6",
+    "@adonisjs/view": "^6.1.1",
+    "proxy-addr": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.20"
+  }
+}
