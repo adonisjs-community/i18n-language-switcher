@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "@adonisjs/core": "^5.4.0",
-    "@adonisjs/i18n": "^1.5.0",
-    "@adonisjs/repl": "^3.1.6",
+    "@adonisjs/i18n": "^1.5.1",
+    "@adonisjs/repl": "^3.1.7",
     "@adonisjs/session": "^6.1.2",
     "@adonisjs/shield": "^7.0.6",
     "@adonisjs/view": "^6.1.1",
